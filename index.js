@@ -13,6 +13,11 @@ const passField = document.querySelector("#password");
 const conPassField = document.querySelector("#conPassword");
 const checkField = document.querySelector("#checkbox");
 
+
+const logUserField = document.querySelector("#log-username");
+const logPassField = document.querySelector("#log-password");
+const logCheckField = document.querySelector("#remember-checkbox");
+
 openSignUpBtn.addEventListener("click", () => {
   clearForm()
   document.body.classList.add("showSignupForm");
@@ -46,11 +51,18 @@ const checkValidity = () => {
 };
 
 const clearForm = () => {
+  // clears the signup form
+  signUp.className = ""
   emailField.value = ""
   userField.value = ""
   passField.value = "" 
   conPassField.value = ""
   checkField.checked = false
+
+  // clears the login form
+  logUserField.value = ""
+  logPassField.value = ""
+  logCheckField.checked = false
 };
 
 signUp.addEventListener("mousemove", (e) => {
@@ -59,6 +71,7 @@ signUp.addEventListener("mousemove", (e) => {
 
   var matrix = new WebKitCSSMatrix(window.getComputedStyle(signUp).transform);
 
+  // checks the transform of the signup button, this is the funtionality which allows the button to move on hover
   if (matrix.m41 == "0") {
     signUp.className = "left";
   } else if (matrix.m41 >= "108") {

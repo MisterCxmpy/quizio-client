@@ -269,4 +269,8 @@ body.dark .btn{
   .popup {
     width: 360px;
   }
+
+  #light-options {
+    font-size: 30px;
+  }
 }
