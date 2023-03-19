@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/all.css" />
+    <script defer src="index.js"></script>
+    <title>Quizio</title>
+  </head>
+  <body class="light">
+    <div id="light-options">
+      <i id="dark" class="fa-solid fa-moon"></i>
+      <i id="light" class="fa-solid fa-sun"></i>
+    </div>
+    <header>
+      <h1>Quizio</h1>
+      <button id="open-sign-in" class="btn">Sign in</button>
+    </header>
+    <div class="container">
+      <div id="text">
+        This is going to be some kind of bs slogan that totally isn't true but we are going to make it sound true
+      </div>
+      <button id="open-sign-up" class="btn">Sign up</button>
+    </div>
+    <div class="popup-overlay" id="sign-up-overlay">
+      <div class="popup" id="sign-up-popup">
+        <div class="popup-close" id="close-sign-up">&times;</div>
+        <form class="form">
+          <div class="header">
+            Sign up
+          </div>
+          <div class="element">
+            <input class="inputReq" type="text" id="email" required>
+            <span class="element-label" id="email-label">Email</span>
+          </div>
+          <div class="element">
+            <input class="inputReq" type="text" id="username" required>
+            <span class="element-label">Username</span>
+          </div>
+          <div class="element">
+            <input class="inputReq" type="password" id="password" required>
+            <span class="element-label">Password</span>
+          </div>
+          <div class="element">
+            <input class="inputReq" type="password" id="conPassword" required>
+            <span class="element-label">Confirm Password</span>
+          </div>
+          <div style="display:block; padding: 5px 20px;">
+            <input class="inputReq" id="checkbox" type="checkbox"/>
+            <label id="terms-and-cond" for="checkbox"> I agree to these <a href="#">Terms and Conditions</a>.</label>
+          </div>
+          <div class="element">
+            <input id="sign-up" type="submit" value="Submit">
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="popup-overlay" id="sign-in-overlay">
+      <div class="popup" id="sign-in-popup">
+        <div class="popup-close" id="close-sign-in">&times;</div>
+        <form class="form">
+          <div class="header">
+            Sign in
+          </div>
+          <div class="element">
+            <input class="inputReq" type="text" id="log-username" required>
+            <span class="element-label">Username</span>
+          </div>
+          <div class="element">
+            <input class="inputReq" type="password" id="log-password" required>
+            <span class="element-label">Password</span>
+          </div>
+          <div style="display:block; padding: 10px 20px 5px 20px">
+            <input id="remember-checkbox" type="checkbox"/>
+            <label id="remember-me" for="remember-checkbox"> Remember me</label>
+          </div>
+          <div class="element">
+            <input id="sign-in" type="submit" value="Submit">
+          </div>
+          <div class="element" id="create-account">
+            <p>Don't have an account? Sign up!</p>
+            <p>Forgot password</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
