@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/all.css" />
-    <script defer src="./src/javascripts/index.js"></script>
-    <script defer src="./src/javascripts/register.js"></script>
-    <script defer src="./src/javascripts/login.js"></script>
+    <script defer src="./javascripts/index.js"></script>
+    <script defer src="./javascripts/toggleLightDark.js"></script>
+    <script defer src="./javascripts/register.js"></script>
+    <script defer src="./javascripts/login.js"></script>
     <title>Quizio</title>
   </head>
   <body class="light">
@@ -16,7 +17,7 @@
       <i id="dark" class="fa-solid fa-moon"></i>
       <i id="light" class="fa-solid fa-sun"></i>
     </div>
-    <header>
+    <header id="idx-header">
       <h1>Quizio</h1>
       <button id="open-sign-in" class="btn">Sign in</button>
     </header>
@@ -83,7 +84,7 @@
             <input id="sign-in" type="submit" value="Submit">
           </div>
           <div class="element" id="create-account">
-            <p>Don't have an account? Sign up!</p>
+            <p style="cursor: default;">Don't have an account? <span style="cursor: pointer; text-decoration: underline;">Sign up!</span></p>
             <p>Forgot password</p>
             <p class="error-text" id="log-error-text"></p>
           </div>

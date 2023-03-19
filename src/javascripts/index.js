@@ -4,9 +4,6 @@ const closeSignUpBtn = document.querySelector("#close-sign-up");
 const closeSignInBtn = document.querySelector("#close-sign-in");
 const signUpBtn = document.querySelector("#sign-up");
 
-const light = document.querySelector("#light");
-const dark = document.querySelector("#dark");
-
 const signUpForm = document.querySelector("#sign-up-form");
 const signInForm = document.querySelector("#sign-in-form");
 
@@ -65,17 +62,3 @@ signUpBtn.addEventListener("mousemove", (e) => {
     signUpBtn.className = "left";
   }
 });
-
-dark.addEventListener("click", () => {
-  dark.style.display = "none"
-  light.style.display = "block"
-
-  window.document.body.className ="dark"
-})
-
-light.addEventListener("click", () => {
-  light.style.display = "none"
-  dark.style.display = "block"
-
-  window.document.body.className ="light"
-})
