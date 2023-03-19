@@ -10,7 +10,7 @@ const signUp = async (data) => {
     body: JSON.stringify(data),
   };
 
-  const res = await fetch("http://localhost:4000/auth/signup", options);
+  const res = await fetch("http://localhost:5000/auth/signup", options);
 
   if (res.ok) {
     console.log("Successfuly logged in:", data);
@@ -22,7 +22,7 @@ const signUp = async (data) => {
 const getFormData = () => {
   let formData = {};
   const inputs = document.querySelectorAll(".reg-form-data");
-  inputs.forEach((input) => (formData[input.id] = input.value));
+  inputs.forEach((input) => (formData[input.name] = input.value));
 
   return formData;
 }

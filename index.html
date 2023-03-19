@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/all.css" />
     <script defer src="./src/javascripts/index.js"></script>
     <script defer src="./src/javascripts/register.js"></script>
+    <script defer src="./src/javascripts/login.js"></script>
     <title>Quizio</title>
   </head>
   <body class="light">
@@ -33,15 +34,15 @@
             Sign up
           </div>
           <div class="element">
-            <input class="inputReq reg-form-data" type="text" id="email" required>
+            <input class="inputReq reg-form-data" type="text" id="email" name="email" required>
             <span class="element-label" id="email-label">Email</span>
           </div>
           <div class="element">
-            <input class="inputReq reg-form-data" type="text" id="username" required>
+            <input class="inputReq reg-form-data" type="text" id="username" name="username" required>
             <span class="element-label">Username</span>
           </div>
           <div class="element">
-            <input class="inputReq reg-form-data" type="password" id="password" required>
+            <input class="inputReq reg-form-data" type="password" id="password" name="password" required>
             <span class="element-label">Password</span>
           </div>
           <div class="element">
@@ -55,7 +56,7 @@
           <div class="element">
             <input id="sign-up" type="submit" value="Submit">
           </div>
-          <p id="reg-error-text"></p>
+          <p class="error-text" id="reg-error-text"></p>
         </form>
       </div>
     </div>
@@ -67,11 +68,11 @@
             Sign in
           </div>
           <div class="element">
-            <input class="inputReq" type="text" id="log-username" required>
+            <input class="inputReq log-form-data" type="text" id="log-username"name="username" required>
             <span class="element-label">Username</span>
           </div>
           <div class="element">
-            <input class="inputReq" type="password" id="log-password" required>
+            <input class="inputReq log-form-data" type="password" id="log-password" name="password" required>
             <span class="element-label">Password</span>
           </div>
           <div style="display:block; padding: 10px 20px 5px 20px">
@@ -84,7 +85,7 @@
           <div class="element" id="create-account">
             <p>Don't have an account? Sign up!</p>
             <p>Forgot password</p>
-            <p id="log-error-text"></p>
+            <p class="error-text" id="log-error-text"></p>
           </div>
         </form>
       </div>

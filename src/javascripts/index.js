@@ -10,6 +10,12 @@ const dark = document.querySelector("#dark");
 const signUpForm = document.querySelector("#sign-up-form");
 const signInForm = document.querySelector("#sign-in-form");
 
+const emailField = document.querySelector("#email");
+const userField = document.querySelector("#username");
+const passField = document.querySelector("#password");
+const conPassField = document.querySelector("#conPassword");
+const checkField = document.querySelector("#checkbox");
+
 openSignUpBtn.addEventListener("click", () => {
   signUpForm.reset()
   document.body.classList.add("showSignupForm");
