@@ -229,18 +229,23 @@ body.dark .btn{
   font-size: 14px;
 }
 
-i {
+#light-options {
   position: absolute;
   font-size: 40px;
+  transform: translate(-50%,0);
   left: 50%;
   top: 10px;
   cursor: pointer;
+  margin: 0;
 }
 
 #light {
   display: none;
 }
 
+#remember-me {
+  color: #232323;
+}
 
 #create-account {
   text-align: center;
@@ -248,5 +253,20 @@ i {
 
 #create-account p {
   cursor: pointer;
+  color: #232323;
 }
 
+@media only screen and (max-width: 600px) {
+  #text {
+    font-size: 2rem;
+    margin: 10% 5% 10% 5%;
+  }
+  
+  #sign-up.left, #sign-up.right {
+    transform: translateX(0);
+  }
+
+  .popup {
+    width: 360px;
+  }
+}
