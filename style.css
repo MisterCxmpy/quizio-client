@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap');
+
 html, body {
   margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #fafafa;
+  color: #202020;
 }
 
 header {
@@ -105,15 +110,12 @@ body.showSignupForm .popup-overlay {
 
 .popup .form .element .element-label {
   position: absolute;
-  pointer-events: none;
-  height: 25px;
-  font-size: 15px;
-  margin: auto;
-  color: #7e7e7e;
-  margin-top: 12px;
-  margin-left: 15px;
-  text-align: center;
+  left: 31px;
+  margin-top: 9px;
+  transition: all 0.2s ease-out; /* smooth transition */
+  pointer-events: none; /* label should not interfere with input */
 }
+
 
 .popup .form .element input {
   width: 100%;
@@ -125,6 +127,13 @@ body.showSignupForm .popup-overlay {
   background: #eee;
   border-radius: 5px;
   height: 40px;
+}
+
+.popup .form .element input:focus ~ span, 
+.popup .form .element input:valid ~ span {
+  margin-top: -27px;
+  left: 27px;
+  font-size: 20px;
 }
 
 #sign-up {
