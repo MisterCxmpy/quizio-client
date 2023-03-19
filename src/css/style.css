@@ -249,9 +249,10 @@ body.dark .btn{
 
 #create-account {
   text-align: center;
+  margin-top: -20px;
 }
 
-#create-account p {
+#create-account p:not(#log-error-text, #reg-error-text) {
   cursor: pointer;
   color: #232323;
 }
@@ -273,4 +274,11 @@ body.dark .btn{
   #light-options {
     font-size: 30px;
   }
+}
+
+.error-text {
+  text-align: center;
+  color: red;
+  font-weight: bold !important;
+  font-size: 20px;
 }

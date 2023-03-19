@@ -2,10 +2,13 @@ const openSignUpBtn = document.querySelector("#open-sign-up");
 const openSignInBtn = document.querySelector("#open-sign-in");
 const closeSignUpBtn = document.querySelector("#close-sign-up");
 const closeSignInBtn = document.querySelector("#close-sign-in");
-const signUp = document.querySelector("#sign-up");
+const signUpBtn = document.querySelector("#sign-up");
 
 const light = document.querySelector("#light");
 const dark = document.querySelector("#dark");
+
+const signUpForm = document.querySelector("#sign-up-form");
+const signInForm = document.querySelector("#sign-in-form");
 
 const emailField = document.querySelector("#email");
 const userField = document.querySelector("#username");
@@ -13,18 +16,13 @@ const passField = document.querySelector("#password");
 const conPassField = document.querySelector("#conPassword");
 const checkField = document.querySelector("#checkbox");
 
-
-const logUserField = document.querySelector("#log-username");
-const logPassField = document.querySelector("#log-password");
-const logCheckField = document.querySelector("#remember-checkbox");
-
 openSignUpBtn.addEventListener("click", () => {
-  clearForm()
+  signUpForm.reset()
   document.body.classList.add("showSignupForm");
 });
 
 openSignInBtn.addEventListener("click", () => {
-  clearForm()
+  signInForm.reset()
   document.body.classList.add("showSigninForm");
 });
 
@@ -50,34 +48,21 @@ const checkValidity = () => {
   return false
 };
 
-const clearForm = () => {
-  // clears the signup form
-  signUp.className = ""
-  emailField.value = ""
-  userField.value = ""
-  passField.value = "" 
-  conPassField.value = ""
-  checkField.checked = false
 
-  // clears the login form
-  logUserField.value = ""
-  logPassField.value = ""
-  logCheckField.checked = false
-};
+signUpBtn.addEventListener("mousemove", (e) => {  
+  e.preventDefault()
 
-signUp.addEventListener("mousemove", (e) => {
-  
   if (checkValidity()) return
 
-  var matrix = new WebKitCSSMatrix(window.getComputedStyle(signUp).transform);
+  var matrix = new WebKitCSSMatrix(window.getComputedStyle(signUpBtn).transform);
 
   // checks the transform of the signup button, this is the funtionality which allows the button to move on hover
   if (matrix.m41 == "0") {
-    signUp.className = "left";
+    signUpBtn.className = "left";
   } else if (matrix.m41 >= "108") {
-    signUp.className = "right";
+    signUpBtn.className = "right";
   } else if (matrix.m41 <= "-108") {
-    signUp.className = "left";
+    signUpBtn.className = "left";
   }
 });
 
