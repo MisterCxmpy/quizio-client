@@ -274,3 +274,9 @@ body.dark .btn{
     font-size: 30px;
   }
 }
+
+#reg-error-text {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+}
