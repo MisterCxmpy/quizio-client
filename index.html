@@ -22,9 +22,9 @@
       </div>
       <button id="open-sign-up" class="btn">Sign up</button>
     </div>
-    <div class="popup-overlay">
-      <div class="popup">
-        <div class="popup-close">&times;</div>
+    <div class="popup-overlay" id="sign-up-overlay">
+      <div class="popup" id="sign-up-popup">
+        <div class="popup-close" id="close-sign-up">&times;</div>
         <form class="form">
           <div class="header">
             Sign up
@@ -51,6 +51,35 @@
           </div>
           <div class="element">
             <input id="sign-up" type="submit" value="Submit">
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="popup-overlay" id="sign-in-overlay">
+      <div class="popup" id="sign-in-popup">
+        <div class="popup-close" id="close-sign-in">&times;</div>
+        <form class="form">
+          <div class="header">
+            Sign in
+          </div>
+          <div class="element">
+            <input class="inputReq" type="text" id="log-username" required>
+            <span class="element-label">Username</span>
+          </div>
+          <div class="element">
+            <input class="inputReq" type="password" id="log-password" required>
+            <span class="element-label">Password</span>
+          </div>
+          <div style="display:block; padding: 10px 20px 5px 20px">
+            <input id="remember-checkbox" type="checkbox"/>
+            <label id="remember-me" for="remember-checkbox"> Remember me</label>
+          </div>
+          <div class="element">
+            <input id="sign-in" type="submit" value="Submit">
+          </div>
+          <div class="element" id="create-account">
+            <p>Don't have an account? Sign up!</p>
+            <p>Forgot password</p>
           </div>
         </form>
       </div>

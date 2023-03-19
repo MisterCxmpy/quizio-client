@@ -72,8 +72,16 @@ header > button {
   animation: popup 300ms ease-in-out;
 }
 
-body.showSignupForm .popup-overlay {
+body.showSignupForm #sign-up-overlay {
   display: block;
+}
+
+body.showSigninForm #sign-in-overlay {
+  display: block;
+}
+
+body.showSigninForm #sign-in-overlay > .popup {
+  height: 450px;
 }
 
 @keyframes popup {
@@ -164,6 +172,26 @@ body.showSignupForm .popup-overlay {
   transition: transform 150ms ease-in-out;
 }
 
+#sign-in {
+  margin-top: 5px;
+  width: 100%;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #4889da;
+  color: #f5f5f5;
+  height: 50px;
+  margin:0 auto;
+  display:block;
+  float: none;
+  transition: transform 150ms ease-in-out;
+}
+
+
 #sign-up.left {
   transform: translateX(100%);
 }
@@ -212,3 +240,13 @@ i {
 #light {
   display: none;
 }
+
+
+#create-account {
+  text-align: center;
+}
+
+#create-account p {
+  cursor: pointer;
+}
+

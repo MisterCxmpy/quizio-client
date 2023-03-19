@@ -1,5 +1,7 @@
 const openSignUpBtn = document.querySelector("#open-sign-up");
-const closeSignUpBtn = document.querySelector(".popup-close");
+const openSignInBtn = document.querySelector("#open-sign-in");
+const closeSignUpBtn = document.querySelector("#close-sign-up");
+const closeSignInBtn = document.querySelector("#close-sign-in");
 const signUp = document.querySelector("#sign-up");
 
 const light = document.querySelector("#light");
@@ -16,9 +18,19 @@ openSignUpBtn.addEventListener("click", () => {
   document.body.classList.add("showSignupForm");
 });
 
+openSignInBtn.addEventListener("click", () => {
+  clearForm()
+  document.body.classList.add("showSigninForm");
+});
+
 closeSignUpBtn.addEventListener("click", () => {
   document.body.classList.remove("showSignupForm");
 });
+
+closeSignInBtn.addEventListener("click", () => {
+  document.body.classList.remove("showSigninForm");
+});
+
 
 const checkValidity = () => {
   if (
