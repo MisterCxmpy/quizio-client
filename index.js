@@ -2,6 +2,9 @@ const openSignUpBtn = document.querySelector("#open-sign-up");
 const closeSignUpBtn = document.querySelector(".popup-close");
 const signUp = document.querySelector("#sign-up");
 
+const light = document.querySelector("#light");
+const dark = document.querySelector("#dark");
+
 const emailField = document.querySelector("#email");
 const userField = document.querySelector("#username");
 const passField = document.querySelector("#password");
@@ -52,3 +55,17 @@ signUp.addEventListener("mousemove", (e) => {
     signUp.className = "left";
   }
 });
+
+dark.addEventListener("click", () => {
+  dark.style.display = "none"
+  light.style.display = "block"
+
+  window.document.body.className ="dark"
+})
+
+light.addEventListener("click", () => {
+  light.style.display = "none"
+  dark.style.display = "block"
+
+  window.document.body.className ="light"
+})

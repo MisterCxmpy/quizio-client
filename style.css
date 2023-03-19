@@ -3,8 +3,16 @@
 html, body {
   margin: 0;
   font-family: 'Inter', sans-serif;
+}
+
+body.light {
   background: #fafafa;
   color: #202020;
+}
+
+body.dark {
+  background: #202020;
+  color: #fafafa;
 }
 
 header {
@@ -89,7 +97,7 @@ body.showSignupForm .popup-overlay {
   height: 40px;
   background: #555;
   color: #f5f5f5;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 600;
   text-align: center;
   border-radius: 50%;
@@ -112,8 +120,9 @@ body.showSignupForm .popup-overlay {
   position: absolute;
   left: 31px;
   margin-top: 9px;
-  transition: all 0.2s ease-out; /* smooth transition */
-  pointer-events: none; /* label should not interfere with input */
+  transition: all 0.2s ease-out;
+  pointer-events: none;
+  color: #8b8b8b;
 }
 
 
@@ -171,4 +180,35 @@ body.showSignupForm .popup-overlay {
   position: absolute;
   margin-top: 0px;
   margin-left: 5px;
+  color: #232323;
+}
+
+.btn {
+  background: #232323;
+  border: none;
+  border-radius: 5px;
+  color: #fafafa;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+body.dark .btn{
+  background: #fafafa;
+  color: #232323;
+}
+
+#open-sign-in {
+  font-size: 14px;
+}
+
+i {
+  position: absolute;
+  font-size: 40px;
+  left: 50%;
+  top: 10px;
+  cursor: pointer;
+}
+
+#light {
+  display: none;
 }

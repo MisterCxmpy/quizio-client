@@ -5,19 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/all.css" />
     <script defer src="index.js"></script>
     <title>Quizio</title>
   </head>
-  <body>
+  <body class="light">
+    <i id="dark" class="fa-solid fa-moon"></i>
+    <i id="light" class="fa-solid fa-sun"></i>
     <header>
       <h1>Quizio</h1>
-      <button>Sign in</button>
+      <button id="open-sign-in" class="btn">Sign in</button>
     </header>
     <div class="container">
       <div id="text">
         This is going to be some kind of bs slogan that totally isn't true but we are going to make it sound true
       </div>
-      <button id="open-sign-up">Sign up</button>
+      <button id="open-sign-up" class="btn">Sign up</button>
     </div>
     <div class="popup-overlay">
       <div class="popup">
