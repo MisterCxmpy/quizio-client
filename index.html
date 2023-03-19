@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="index.js"></script>
+    <title>Quizio</title>
+  </head>
+  <body>
+    <header>
+      <h1>Quizio</h1>
+      <button>Sign in</button>
+    </header>
+    <div class="container">
+      <div id="text">
+        This is going to be some kind of bs slogan that totally isn't true but we are going to make it sound true
+      </div>
+      <button id="open-sign-up">Sign up</button>
+    </div>
+    <div class="popup-overlay">
+      <div class="popup">
+        <div class="popup-close">&times;</div>
+        <form class="form">
+          <div class="header">
+            Sign up
+          </div>
+          <div class="element">
+            <span class="element-label">Email</span>
+            <input class="inputReq" type="text" id="email" required>
+          </div>
+          <div class="element">
+            <span class="element-label">Username</span>
+            <input class="inputReq" type="text" id="username" required>
+          </div>
+          <div class="element">
+            <span class="element-label">Password</span>
+            <input class="inputReq" type="password" id="password" required>
+          </div>
+          <div class="element">
+            <span class="element-label">Confirm Password</span>
+            <input class="inputReq" type="password" id="conPassword" required>
+          </div>
+          <div style="display:block; padding: 5px 20px;">
+            <input class="inputReq" id="checkbox" type="checkbox"/>
+            <label id="terms-and-cond" for="checkbox"> I agree to these <a href="#">Terms and Conditions</a>.</label>
+          </div>
+          <div class="element">
+            <input id="sign-up" type="submit" value="Submit">
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
