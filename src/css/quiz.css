@@ -1,12 +1,11 @@
 .quiz-card {
-  width: max-content;
   background-color: rgba(223, 223, 223, 0.393);
   padding: 12px 28px;
   border-radius: 5px;
 }
 
-.quiz-card p{
-  opacity: .9;
+.quiz-card p {
+  opacity: 0.9;
 }
 
 .choices-grid {
@@ -23,7 +22,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 800px) {
   .choices-grid {
     display: flex;
     flex-direction: column;
