@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/all.css" />
     <script defer src="./javascripts/index.js"></script>
     <script defer src="./javascripts/toggleLightDark.js"></script>
@@ -13,20 +14,25 @@
     <title>Quizio</title>
   </head>
   <body class="light">
-    <div id="light-options">
-      <i id="dark" class="fa-solid fa-moon"></i>
-      <i id="light" class="fa-solid fa-sun"></i>
-    </div>
-    <header id="idx-header">
+    <header class="nav-bar" id="idx-header">
       <h1>Quizio</h1>
-      <button id="open-sign-in" class="btn">Sign in</button>
+
+      <div class="user-actions">
+        <div class="light-options" id="light-options">
+          <i id="dark" class="fa-solid fa-moon"></i>
+          <i id="light" class="fa-solid fa-sun"></i>
+        </div>
+        <button id="open-sign-in" class="btn">Sign in</button>
+      </div>
     </header>
+
     <div class="container">
       <div id="text">
         This is going to be some kind of bs slogan that totally isn't true but we are going to make it sound true
       </div>
       <button id="open-sign-up" class="btn">Sign up</button>
     </div>
+    
     <div class="popup-overlay" id="sign-up-overlay">
       <div class="popup" id="sign-up-popup">
         <div class="popup-close" id="close-sign-up">&times;</div>
