@@ -27,6 +27,7 @@ body.dark {
 
 .user-actions {
   display: flex;
+  align-items: center;
 }
 
 .nav-bar h1 {
