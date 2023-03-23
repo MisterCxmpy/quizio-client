@@ -15,16 +15,31 @@ body.dark {
   color: #fafafa;
 }
 
-#idx-header {
-  margin: 2% 10%;
+.nav-bar {
+  background-color: #202020;
+  color: #fafafa;
+
   display: flex;
   justify-content: space-between;
-  align-items: center;
+
+  padding: 18px 32px;
 }
 
-#idx-header > button {
-  width: 100px;
-  height: 30px;
+.user-actions {
+  display: flex;
+}
+
+.nav-bar h1 {
+  margin: 0;
+}
+
+.light-options {
+  font-size: 30px;
+  transform: translate(-50%,0);
+  left: 50%;
+  top: 10px;
+  cursor: pointer;
+  margin: 0;
 }
 
 .container {
@@ -227,16 +242,6 @@ body.dark .btn{
 
 #open-sign-in {
   font-size: 14px;
-}
-
-#light-options {
-  position: absolute;
-  font-size: 40px;
-  transform: translate(-50%,0);
-  left: 50%;
-  top: 10px;
-  cursor: pointer;
-  margin: 0;
 }
 
 #light {

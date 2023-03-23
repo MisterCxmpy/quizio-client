@@ -1,0 +1,28 @@
+.quiz-card {
+  width: max-content;
+  background-color: rgba(223, 223, 223, 0.393);
+  padding: 12px 28px;
+  border-radius: 5px;
+}
+
+.choices-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+}
+
+.choices-grid .choice {
+  padding: 12px 28px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px){
+  .choices-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+}

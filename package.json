@@ -1,0 +1,20 @@
+{
+  "name": "quizio-client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "live-server ./src -p 2000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MisterCxmpy/quizio-client.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MisterCxmpy/quizio-client/issues"
+  },
+  "homepage": "https://github.com/MisterCxmpy/quizio-client#readme"
+}
