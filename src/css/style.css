@@ -76,3 +76,7 @@ body.dark .btn {
   background: #fafafa;
   color: #232323;
 }
+
+#light {
+  display: none;
+}

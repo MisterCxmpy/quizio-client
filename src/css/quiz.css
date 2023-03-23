@@ -5,6 +5,10 @@
   border-radius: 5px;
 }
 
+.quiz-card p{
+  opacity: .9;
+}
+
 .choices-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
